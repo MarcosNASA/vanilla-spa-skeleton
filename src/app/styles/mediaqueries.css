@@ -1,0 +1,26 @@
+@media screen and (max-width: 600px) {
+  :root {
+    font-size: 8px;
+  }
+
+  .app {
+    grid-template-areas:
+      'content'
+      'nav';
+    grid-template-rows: 20fr 1fr;
+    grid-template-columns: 12fr;
+  }
+
+  .nav-bar__list {
+    flex-direction: row;
+    padding: 0 var(--padding-lg);
+  }
+
+  .nav-bar__link {
+    height: 100%;
+  }
+
+  .footer {
+    display: none;
+  }
+}

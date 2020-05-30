@@ -1,0 +1,9 @@
+{
+  "name": "",
+  "short_name": "",
+  "theme_color": "",
+  "background_color": "",
+  "display": "browser",
+  "scope": "/app/",
+  "start_url": "/app/index.html"
+}

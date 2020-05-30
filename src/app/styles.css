@@ -1,0 +1,130 @@
+:root {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+
+  --padding-sm: 1rem;
+  --padding-md: 2rem;
+  --padding-lg: 4rem;
+  --padding-xl: 10rem;
+
+  --light-color: #f0f0f0;
+  --light-color-shade: #bdbdbd;
+
+  --medium-color: #1b1b20;
+  --medium-color-shade: #121214;
+  --medium-color-tint: #2a313b;
+
+  --dark-color: #0c0c0d;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 1px solid var(--dark-color);
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    'nav content'
+    'nav footer';
+  grid-template-rows: 1fr auto;
+  grid-template-columns: auto 1fr;
+  background-color: var(--medium-color-shade);
+  color: var(--light-color);
+  font-size: 1.6rem;
+}
+
+.nav-bar {
+  grid-area: nav;
+  background-color: var(--medium-color);
+  box-shadow: 0px 2px 4px var(--dark-color);
+}
+
+.nav-bar__list {
+  height: 100%;
+  padding: var(--padding-xl) 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-bar__item {
+  width: 100%;
+}
+
+.nav-bar__link {
+  width: 100%;
+  padding: var(--padding-lg) var(--padding-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-bar__link:hover {
+  background-color: var(--dark-color);
+}
+
+.nav-bar__icon {
+  margin: var(--padding-sm);
+  pointer-events: none;
+}
+
+.main {
+  grid-area: content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page:not(.active) {
+  display: none;
+}
+
+.active {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: var(--padding-lg);
+  background-color: var(--dark-color);
+  box-shadow: 2px 0px 4px var(--dark-color);
+}

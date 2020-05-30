@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Web App Skeleton</title>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="">
+    <meta name="author"
+          content="">
+    <meta name="keywords"
+          content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon"
+          type="image/x-icon"
+          href="" />
+    <link href="./styles.css"
+          rel="stylesheet">
+    </link>
+    <link href="./styles/page1.css"
+          rel="stylesheet">
+    </link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+          rel="preload"
+          as="style"
+          onload="this.onload=null;this.rel='stylesheet'">
+    <link href="./styles/page2.css"
+          rel="preload"
+          as="style"
+          onload="this.onload=null;this.rel='stylesheet'">
+    <link href="./styles/mediaqueries.css"
+          rel="stylesheet">
+    </link>
+    <noscript>
+
+    </noscript>
+    <script src="./index.js"
+            defer></script>
+</head>
+
+<body class="app">
+    <nav class="nav-bar">
+        <ul class="nav-bar__list">
+            <li class="nav-bar__item">
+                <a class="nav-bar__link spa-link"
+                   data-target="page1"
+                   tabindex="1">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         class="nav-bar__icon"
+                         height="24"
+                         viewBox="0 0 24 24"
+                         width="24"
+                         role="img">
+                        <title id="homeTitle">Page 1</title>
+                        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+                              fill="#fff" />
+                    </svg>
+                    Page 1
+                </a>
+            </li>
+            <li class="nav-bar__item">
+                <a class="nav-bar__link spa-link"
+                   data-target="page2"
+                   tabindex="2">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         class="nav-bar__icon"
+                         height="24"
+                         viewBox="0 0 24 24"
+                         width="24"
+                         role="img">
+                        <title id="skillsTitle">Page 2</title>
+                        <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"
+                              fill="#fff" />
+                    </svg>
+                    Page 2
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main class="main">
+        <article id="page1"
+                 class="page1 page active">
+            <header class="page1__header">
+                <h1 class="page1__title">
+                    PAGE 1
+                </h1>
+            </header>
+            <section>
+                Page 1 content
+            </section>
+        </article>
+        <article id="page2"
+                 class="page2 page">
+            <header class="page2__header">
+                <h1 class="page2__title">
+                    PAGE 2
+                </h1>
+            </header>
+            <section>
+                Page 2 content
+            </section>
+        </article>
+    </main>
+    <footer class="footer">
+        <p>Built by Marcos NASA G
+            <i>&copy;</i>
+            <time>2020</time>
+        </p>
+    </footer>
+    <script src="../../lazysizes.min.js"
+            async></script>
+</body>
+
+</html>
